@@ -1,5 +1,22 @@
 <html>
-  <script src="https://ej123-developer-edition.na139.force.com/lightning/lightning.out.js"></script>
+  <script src="https://golmn.force.com/homepage/lightning/lightning.out.js"></script>
+  
+  <script>
+    $Lightning.use("runtime_appointmentbooking:lightningOutGuest",
+        function() {                  // Callback once framework and app load
+            $Lightning.createComponent(
+                "lightning:flow",    // top-level component of your app
+                { },    // attributes to set on the component when created
+                "lexcontainer",    // the DOM location to insert the component
+                function(component) {            // API name of the Flow
+                    component.startFlow(”Salesforce_Scheduler_Unauthenticated”);
+                  console.log('lightening component created');
+                }
+            );
+        },    'https://golmn.force.com/homepag'  // Site endpoint
+    );
+</script>
+  
   <h1> Hello, Welcome to EJ world </h1>
-  Test again
+  Test again2
 </html>

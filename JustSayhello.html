@@ -6,11 +6,11 @@
     $Lightning.use("runtime_appointmentbooking:lightningOutGuest",
         function() {                  // Callback once framework and app load
             $Lightning.createComponent(
-                "lightning:Inbound_New_Guest_Appointment_HomePage",    // top-level component of your app
+                "lightning:flow",    // top-level component of your app
                 { },    // attributes to set on the component when created
                 "lexcontainer",    // the DOM location to insert the component
                 function(component) {            // API name of the Flow
-                    component.startFlow("Salesforce_Scheduler_Unauthenticated");
+                    component.startFlow("Inbound_New_Guest_Appointment_HomePage");
                 }
             );
         },    'https://golmn.force.com/homepage'  // Site endpoint
@@ -18,6 +18,6 @@
 </script>
   <form id = "lexcontainer">
   <h1> Hello, Welcome to EJ world </h1>
-  Test again 12
+  Test again 13
     </form>
 </html>

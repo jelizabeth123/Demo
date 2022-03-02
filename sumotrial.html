@@ -5,19 +5,19 @@
   <input type = "text" id="state" name="state">
   <p id="demo"></p>
   <script>
-    let st = 'utah';
     let text;
     let territory;
-    if (document.getElementById("state").value = 'utah' || 'oregon' || 'nevada') {
-      terriroty = 'southwest';
+    let st = document.getElementById("state").value;
+    if ( st = 'utah' || 'oregon' || 'nevada') {
+      territory = 'southwest';
     }
-    if (document.getElementById("state").value = 'hawaii' || 'guam' || 'puerto rico') {
-      terriroty = 'Usother';
+    else if (st = 'hawaii' || 'guam' || 'puerto rico') {
+      territory = 'Usother';
     }
-    if (terriroty = 'southwest') {
+    if (territory = 'southwest') {
       text = "<a href='https://demo-golmn.cs201.force.com/s/onlinescheduler?processId=a7C7h000000CrrqEAC'>South-west</a>";
     }
-    else if (terriroty = 'Usother') {
+    else if (territory = 'Usother') {
       text = "<a href='https://demo-golmn.cs201.force.com/s/onlinescheduler?processId=a7C7h000000CruQEAS'>US Other</a>";
     }
     document.getElementById("demo").innerHTML = text;

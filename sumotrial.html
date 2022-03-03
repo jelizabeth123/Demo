@@ -1,25 +1,6 @@
 <html>
   <h2>Testing for Sumo</h2>
-  5 <br>
-  <label for ="State"> State/Province: </label>
-  <input type = "text" id="state" name="state">
-  <p id="demo"></p>
-  <script>
-    let text;
-    let territory;
-    let st = document.getElementById("state").value;
-    if ( st = 'utah' || 'oregon' || 'nevada') {
-      territory = 'southwest';
-    }
-    else if (st = 'hawaii' || 'guam' || 'puerto rico') {
-      territory = 'Usother';
-    }
-    if (territory = 'southwest') {
-      text = "<a href='https://demo-golmn.cs201.force.com/s/onlinescheduler?processId=a7C7h000000CrrqEAC'>South-west</a>";
-    }
-    else if (territory = 'Usother') {
-      text = "<a href='https://demo-golmn.cs201.force.com/s/onlinescheduler?processId=a7C7h000000CruQEAS'>US Other</a>";
-    }
-    document.getElementById("demo").innerHTML = text;
+  6 <br>
+  <iframe width="794" height="658" allow="geolocation" frameborder="0" src="https://demo-golmn.cs201.force.com/apex/sumoapp__onlinescheduler?processId=a7C7h000000CrrqEAC&isIframe=true"></iframe>
   </script>
 </html>
